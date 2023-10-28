@@ -1,0 +1,107 @@
+<form autocomplete="off">
+  <div class="attribute-bonuses">
+    <label>{{localize 'FGG.scores.str.long'}}</label>
+    <ol>
+      <li>
+        {{localize 'FGG.MeleeBonus'}} ({{mod data.scores.str.atk}})
+      </li>
+      <li>
+        {{localize 'FGG.MeleeDamage'}} ({{mod data.scores.str.dmg}})
+      </li>
+      <li>
+        {{localize 'FGG.NonEncumbered'}} ({{data.scores.str.nonencum}} lbs.)
+      </li>
+      <li>
+        {{localize 'FGG.MaxWeight'}} ({{data.scores.str.maxweight}} lbs.)
+      </li>
+      <li>
+        {{localize 'FGG.exploration.od.long'}} ({{data.scores.str.fd}} in 20)
+      </li>
+      <li>
+        {{localize 'FGG.BendLift'}} ({{data.scores.str.bendlift}}%)
+      </li>
+    </ol>
+  </div>
+  <div class="attribute-bonuses">
+    <label>{{localize 'FGG.scores.dex.long'}}</label>
+    <ol>
+      <li>
+        {{localize 'FGG.ReactionBonus'}} ({{mod data.scores.dex.reactmiss}})
+      </li>
+      <li>
+        {{localize 'FGG.MissileBonus'}} ({{mod data.scores.dex.reactmiss}})
+      </li>
+      <li>
+        {{localize 'FGG.ArmorClass'}} ({{mod data.scores.dex.defadj}})
+      </li>
+    </ol>
+  </div>
+  <div class="attribute-bonuses">
+    <label>{{localize 'FGG.scores.con.long'}}</label>
+    <ol>
+      <li>
+        {{localize 'FGG.HealthBonus'}} ({{mod data.scores.con.hpmod}})
+      </li>
+      <li>
+        {{localize 'FGG.SystemShock'}} ({{data.scores.con.systemshock}}%)
+      </li>
+      <li>
+        {{localize 'FGG.ResurrectionChance'}} ({{data.scores.con.resurrectionchance}}%)
+      </li>
+      <li>
+        {{localize 'FGG.PoisonResist'}} ({{mod data.scores.con.poisonresist}})
+      </li>
+      <li>
+        {{localize 'FGG.Regeneration'}} (every {{data.scores.con.regeneration}} turns)
+      </li>
+    </ol>
+  </div>
+  <div class="attribute-bonuses">
+    <label>{{localize 'FGG.scores.int.long'}}</label>
+    <ol>
+      <li>
+        {{localize 'FGG.LanguagesKnown'}} ({{data.scores.int.languagesknown}})
+      </li>
+      <li>
+        {{localize 'FGG.MaxSpellLevel'}} ({{data.scores.int.maxspelllevel}})
+      </li>
+      <li>
+        {{localize 'FGG.MaxNumber'}} ({{data.scores.int.maxnumber}})
+      </li>
+      <li>
+        {{localize 'FGG.LearnSpell'}} ({{data.scores.int.learnspell}}%)
+      </li>
+      <li>
+        {{localize 'FGG.IllusionImmunity'}} ({{data.scores.int.illusionimmunity}})
+      </li>
+    </ol>
+  </div>
+  <div class="attribute-bonuses">
+    <label>{{localize 'FGG.scores.wis.long'}}</label>
+    <ol>
+      <li>
+        {{localize 'FGG.saves.magic.long'}} ({{mod data.scores.wis.mentaldefence}})
+      </li>
+      <li>
+        {{localize 'FGG.BonusSpells'}} ({{data.scores.wis.bonusspells}})
+      </li>
+      <li>
+        {{localize 'FGG.SpellFailure'}} ({{data.scores.wis.spellfailure}}%)
+      </li>
+    </ol>
+  </div>
+  <div class="attribute-bonuses">
+    <label>{{localize 'FGG.scores.cha.long'}}</label>
+    <ol>
+      <li>
+        {{localize 'FGG.RetainersMax'}} ({{data.scores.cha.retainersmax}})
+      </li>
+      <li>
+        {{localize 'FGG.Loyalty'}} ({{mod data.scores.cha.loyalty}})
+      </li>
+      <li>
+        {{localize 'FGG.NPCReaction'}} ({{mod data.scores.cha.npc}})
+      </li>
+    </ol>
+  </div>
+</form>

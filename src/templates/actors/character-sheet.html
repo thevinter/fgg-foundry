@@ -1,0 +1,57 @@
+<form class="{{cssClass}}" autocomplete="off">
+  {{! Sheet Header }}
+  <header class="sheet-header flexrow">
+    {{> "systems/fgg/templates/actors/partials/character-header.html"}}
+  </header>
+
+  {{! Sheet Tab Navigation }}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="attributes">
+      {{localize "FGG.category.attributesshort"}}
+    </a>
+    <a class="item" data-tab="details">
+      {{localize "FGG.category.detailsshort"}}
+    </a>
+    <a class="item" data-tab="abilities">
+      {{localize "FGG.category.abilitiesshort"}}
+    </a>
+    {{#if data.spells.enabled}}
+    <a class="item" data-tab="spells">
+      {{localize "FGG.category.spells"}}
+    </a>
+    {{/if}}
+    <a class="item" data-tab="inventory">
+      {{localize "FGG.category.inventoryshort"}}
+    </a>
+    <a class="item" data-tab="notes">
+      {{localize "FGG.category.notes"}}
+    </a>
+  </nav>
+  {{! Sheet Body }}
+  <section class="sheet-body">
+    {{! Attributes Tab }}
+    <div class="tab" data-group="primary" data-tab="attributes">
+      {{> "systems/fgg/templates/actors/partials/character-attributes-tab.html"}}
+    </div>
+    <div class="tab" data-group="primary" data-tab="details">
+      {{> "systems/fgg/templates/actors/partials/character-details-tab.html"}}
+    </div>
+    <div class="tab" data-group="primary" data-tab="abilities">
+      {{> "systems/fgg/templates/actors/partials/character-abilities-tab.html"}}
+    </div>
+    <div class="tab" data-group="primary" data-tab="noncombat">
+      {{> "systems/fgg/templates/actors/partials/character-noncombat-tab.html"}}
+    </div>
+    {{#if data.spells.enabled}}
+    <div class="tab" data-group="primary" data-tab="spells">
+      {{> "systems/fgg/templates/actors/partials/character-spells-tab.html"}}
+    </div>
+    {{/if}}
+    <div class="tab" data-group="primary" data-tab="inventory">
+      {{> "systems/fgg/templates/actors/partials/character-inventory-tab.html"}}
+    </div>
+    <div class="tab" data-group="primary" data-tab="notes">
+      {{> "systems/fgg/templates/actors/partials/character-notes-tab.html"}}
+    </div>
+  </section>
+</form>

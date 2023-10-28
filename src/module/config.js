@@ -1,0 +1,205 @@
+export const FGG = {
+  sizeCategories: [
+    { abbreviation: 'T', label: "FGG.size.Tiny", minHeight: 0, maxHeight: 24 },
+    { abbreviation: 'S', label: "FGG.size.Small", minHeight: 25, maxHeight: 48 },
+    { abbreviation: 'M', label: "FGG.size.Medium", minHeight: 49, maxHeight: 84 },
+    { abbreviation: "L", label: "FGG.size.Large", minHeight: 85, maxHeight: 144},
+    { abbreviation: "H", label: "FGG.size.Huge", minHeight: 145, maxHeight: 300},
+    { abbreviation: "G", label: "FGG.size.Gargantuan", minHeight: 301, maxHeight: 4294967296}
+  ],
+  scores: {
+    str: "FGG.scores.str.long",
+    dex: "FGG.scores.dex.long",
+    con: "FGG.scores.con.long",
+    int: "FGG.scores.int.long",
+    wis: "FGG.scores.wis.long",
+    cha: "FGG.scores.cha.long",
+  },
+  roll_type: {
+    result: "=",
+    above: "≥",
+    below: "≤"
+  },
+  saves_short: {
+    death: "FGG.saves.death.short",
+    wand: "FGG.saves.wand.short",
+    paralysis: "FGG.saves.paralysis.short",
+    breath: "FGG.saves.breath.short",
+    spell: "FGG.saves.spell.short",
+  },
+  saves_long: {
+    death: "FGG.saves.death.long",
+    wand: "FGG.saves.wand.long",
+    paralysis: "FGG.saves.paralysis.long",
+    breath: "FGG.saves.breath.long",
+    spell: "FGG.saves.spell.long",
+  },
+  armor : {
+    unarmored: "FGG.armor.unarmored",
+    light: "FGG.armor.light",
+    heavy: "FGG.armor.heavy",
+    shield: "FGG.armor.shield",
+  },
+  colors: {
+    green: "FGG.colors.green",
+    red: "FGG.colors.red",
+    yellow: "FGG.colors.yellow",
+    purple: "FGG.colors.purple",
+    blue: "FGG.colors.blue",
+    orange: "FGG.colors.orange",
+    white: "FGG.colors.white"
+  },
+  encumbrance: {
+    0: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    1: [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.25, 2.5, 2.75],
+    2: [1.5, 2, 2.25, 2.75, 3, 3.25, 3.75, 4, 4.25, 4.75],
+    3: [5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.25, 9.75],
+    4: [11, 12, 13, 14, 15, 16, 17, 18, 19, 19.5],
+    5: [11, 12, 13, 14, 15, 16, 17, 18, 19, 19.5],
+    6: [23, 26, 29, 32, 35, 38, 41, 44, 47, 50],
+    7: [23, 26, 29, 32, 35, 38, 41, 44, 47, 50],
+    8: [40, 45, 50, 55, 60, 65, 70, 75, 80, 85],
+    9: [40, 45, 50, 55, 60, 65, 70, 75, 80, 85],
+    10: [46, 52, 58, 64, 70, 76, 82, 88, 94, 100],
+    11: [46, 52, 58, 64, 70, 76, 82, 88, 94, 100],
+    12: [53, 61, 69, 77, 85, 93, 101, 109, 117, 125],
+    13: [53, 61, 69, 77, 85, 93, 101, 109, 117, 125],
+    14: [65, 75, 85, 95, 105, 115, 125, 135, 145, 155],
+    15: [65, 75, 85, 95, 105, 115, 125, 135, 145, 155],
+    16: [80, 90, 100, 110, 120, 130, 140, 150, 160, 170],
+    17: [97, 109, 121, 133, 145, 157, 169, 181, 193, 210],
+    18: [123, 136, 149, 162, 175, 188, 201, 214, 227, 245],
+    18.50: [148, 161, 174, 187, 200, 213, 226, 239, 252, 270],
+    18.75: [173, 186, 199, 212, 225, 238, 251, 264, 277, 295],
+    18.90: [198, 211, 224, 237, 250, 263, 276, 289, 302, 320],
+    18.99: [248, 261, 274, 287, 300, 313, 326, 339, 352, 365],
+    18.00: [348, 361, 374, 387, 400, 413, 426, 439, 452, 470],
+    19: [498, 511, 523, 536, 549, 562, 575, 588, 611, 625],
+    20: [540, 555, 570, 585, 600, 615, 630, 645, 670, 685],
+    21: [650, 665, 680, 695, 710, 725, 745, 765, 780, 795],
+    22: [802, 819, 836, 853, 870, 887, 904, 921, 937, 954],
+    23: [952, 969, 986, 1000, 1017, 1035, 1052, 1069, 1086, 1110],
+    24: [1255, 1275, 1295, 1315, 1335, 1355, 1375, 1395, 1415, 1430],
+    25: [1545, 1565, 1585, 1605, 1625, 1645, 1665, 1685, 1705, 1730],
+  },
+  languages: [
+    "Common",
+    "Burrow speak",
+    "Druidic",
+    "Dwarven",
+    "Elven",
+    "Giant",
+    "Gnoll",
+    "Gnome",
+    "Goblin",
+    "Halfling",
+    "Hobgoblin",
+    "Kobold",
+    "Orc"
+  ],
+  tags: {
+    melee: "FGG.items.Melee",
+    missile: "FGG.items.Missile",
+    slow: "FGG.items.Slow",
+    twohanded: "FGG.items.TwoHanded",
+    blunt: "FGG.items.Blunt",
+    brace: "FGG.items.Brace",
+    splash: "FGG.items.Splash",
+    reload: "FGG.items.Reload",
+    charge: "FGG.items.Charge",
+  },
+  tag_images: {
+    melee: "/systems/fgg/assets/melee.png",
+    missile: "/systems/fgg/assets/missile.png",
+    slow: "/systems/fgg/assets/slow.png",
+    twohanded: "/systems/fgg/assets/twohanded.png",
+    blunt: "/systems/fgg/assets/blunt.png",
+    brace: "/systems/fgg/assets/brace.png",
+    splash: "/systems/fgg/assets/splash.png",
+    reload: "/systems/fgg/assets/reload.png",
+    charge: "/systems/fgg/assets/charge.png",
+  },
+
+  monster_saves: {
+    0: {
+      label: "Normal Human",
+      d: 16,
+      w: 18,
+      p: 17,
+      b: 20,
+      s: 19
+    },
+    1: {
+      label: "1-2",
+      d: 14,
+      w: 16,
+      p: 15,
+      b: 17,
+      s: 17
+    },
+    3: {
+      label: "3-4",
+      d: 13,
+      w: 15,
+      p: 14,
+      b: 16,
+      s: 16
+    },
+    5: {
+      label: "5-6",
+      d: 11,
+      w: 13,
+      p: 12,
+      b: 13,
+      s: 14
+    },
+    7: {
+      label: "7-8",
+      d: 10,
+      w: 12,
+      p: 11,
+      b: 12,
+      s: 13
+    },
+    9: {
+      label: "9-10",
+      d: 8,
+      w: 10,
+      p: 9,
+      b: 9,
+      s: 11
+    },
+    11: {
+      label: "11-12",
+      d: 7,
+      w: 9,
+      p: 8,
+      b: 8,
+      s: 10
+    },
+    13: {
+      label: "13-14",
+      d: 5,
+      w: 7,
+      p: 6,
+      b: 5,
+      s: 8
+    },
+    15: {
+      label: "15-16",
+      d: 4,
+      w: 6,
+      p: 5,
+      b: 4,
+      s: 7
+    },
+    17: {
+      label: "17+",
+      d: 3,
+      w: 5,
+      p: 4,
+      b: 4,
+      s: 6
+    },
+  }
+};
