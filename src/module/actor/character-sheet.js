@@ -63,6 +63,9 @@ export class FggActorSheetCharacter extends FggActorSheet {
   }
 
   async _onChangeInput(event) {
+    const update={}
+    update[event.target.name]=event.target.value
+    this.actor.update(update);
     if (event.target.name === "data.height") {
       this._calculateSize(event.target.value);
     }

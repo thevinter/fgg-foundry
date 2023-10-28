@@ -352,7 +352,7 @@ export class FggDice {
       rollModes: CONFIG.Dice.rollModes,
     };
     if (data.roll.target) {
-      let targetActor = game.actors.get(data.roll.target.data.actorId);
+      let targetActor = game.actors.get(data.roll.target);
       dialogData.targetActor = targetActor;
     }
 
